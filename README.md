@@ -3,7 +3,7 @@
 
    APPLICATION is
    
-    USERS_API------->MySql db
+    USERS_API----->MySql db
     
     DB details:
     Users schema
@@ -67,3 +67,12 @@
             { 
               "status": "deleted"
             }
+            
+            
+     Basic overview of application:
+     
+     1)Run main.go -> main.go calls application.go file
+     2)map.URLs file contains all the APIs declared
+     3)Whenever user makes any request -> request goes to user controller
+     4)User controller pass the request to services where all the business logic is present
+     5)Services then call user.dao where application is actually interacting with DB(executing queries)
