@@ -44,6 +44,45 @@ func CreateUser(c *gin.Context) {
 	c.JSON(http.StatusCreated,result)
 }
 
-func SearchUser(c *gin.Context) {
-	c.String(http.StatusNotImplemented,"Implement me!")
+func UpdateUser(c *gin.Context) {
+	//get user id from url
+	userId,userErr:=strconv.ParseInt(c.Param("user_id"),10,64)
+	if userErr!=nil{
+		err:=errors.NewBadRequestError("user id should be number")
+		c.JSON(err.Status,err)
+		return
+	}
+    //get the json body for user data to be updated
+	var user users.User
+	if err :=c.ShouldBindJSON(&user);err!=nil{
+		restErr := errors.NewBadRequestError("Invalid json body")
+		c.JSON(restErr.Status,restErr)
+		return
+	}
+
+	user.Id=userId
+	result,err:=services.UpdateUser(user)
+	if err != nil{
+		c.JSON(err.Status,err)
+		return
+	}
+	c.JSON(http.StatusCreated,result)
+}
+
+func DeleteUser(c *gin.Context) {
+	//get user id from url
+	userId,userErr:=strconv.ParseInt(c.Param("user_id"),10,64)
+	if userErr!=nil{
+		err:=errors.NewBadRequestError("user id should be number")
+		c.JSON(err.Status,err)
+		return
+	}
+
+	if err:=services.DeleteUser(userId);err!=nil{
+		c.JSON(err.Status,err)
+		return
+	}
+
+	c.JSON(http.StatusOK,map[string]string{"status":"deleted"})
+
 }

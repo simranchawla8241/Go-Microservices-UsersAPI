@@ -20,12 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3e412df-5914-4516-a321-bfbd4d631a1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/users/user_dto.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/application.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/application.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/url_mappings.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/url_mappings.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user_controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/users/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/users/user_dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/users/user_dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/users_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/users_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/errors/rest_error.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/errors/rest_error.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +69,12 @@
     <configuration name="go build github.com/simranchawla8241/Go-Microservices-UsersAPI" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-Microservices-UsersAPI" />
       <working_directory value="$PROJECT_DIR$" />
+      <envs>
+        <env name="mysql_users_username" value="root" />
+        <env name="mysql_users_password" value="21061996" />
+        <env name="mysql_users_host" value="127.0.0.1:3306" />
+        <env name="mysql_users_schema" value="users_db" />
+      </envs>
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/main.go" />
       <package value="github.com/simranchawla8241/Go-Microservices-UsersAPI" />
@@ -82,6 +90,10 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Go Build.go build github.com/simranchawla8241/Go-Microservices-UsersAPI" />
+      <item itemvalue="Go Build.go build github.com/simranchawla8241/go-Microservices-UsersAPI" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build github.com/simranchawla8241/Go-Microservices-UsersAPI" />
@@ -112,25 +124,33 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="520" y="387" key="#GOROOT/0.0.1440.900@0.0.1440.900" timestamp="1601790198776" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1601827255365">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601875625663">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601827255365" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1601793226965" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1601827255363">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1601875625663" />
+    <state x="585" y="182" width="430" height="535" key="EnvironmentVariablesDialog" timestamp="1601839008929">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601827255363" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1601793226963" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1601827255362">
+    <state x="585" y="182" width="430" height="535" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1601839008929" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1601885477287">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601827255362" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1601793226961" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1601827255364">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601885477287" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1601838435509" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1601885477286">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601827255364" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1601793226964" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601885477286" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1601838435507" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1601885477285">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601885477285" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1601838435504" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1601885477287">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601885477287" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1601838435508" />
   </component>
 </project>
